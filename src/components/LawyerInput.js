@@ -15,6 +15,9 @@ class LawyerInput extends React.Component {
     handleSubmit = (event) => {
         event.preventDefault()
         this.props.addLawyer(this.state)
+        this.setState({
+            first_name: '', last_name: '', retainer: ''
+        })
     }
 
     render() {

@@ -1,5 +1,6 @@
 import React from 'react'
 import { connect } from 'react-redux'
+import { Route } from 'react-router-dom'
 import {fetchLawyers} from '../actions/fetchLawyers'
 import Lawyers from '../components/Lawyers'
 import LawyerInput from '../components/LawyerInput'
@@ -13,8 +14,8 @@ class LawyersContainer extends React.Component {
     render() {
         return (
             <div>
-            <LawyerInput />
-            <Lawyers lawyers={this.props.lawyers}/>
+            <Route path='/lawyers/new' component={LawyerInput}/>
+            <Route exact path='/lawyers' render= {() => <Lawyers lawyers={this.props.lawyers}/>}/>
             </div>
         )
     }
