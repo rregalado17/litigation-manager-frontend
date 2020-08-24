@@ -4,7 +4,7 @@ const Lawyers = (props) => {
     
     return (
         <div>
-            Lawyers
+            {props.lawyers.map(lawyer => <li key={lawyer.id}>{lawyer.first_name} - {lawyer.last_name}</li>)} 
         </div>
     )
 }
