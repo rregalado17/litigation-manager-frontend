@@ -4,7 +4,9 @@ const Litigations = (props) => {
 
     return (
         <div>
-            Forms
+            {props.litigations && props.litigations.map(litigation =>
+                <li key={litigation.id}>{litigation.caption} - {litigation.costs}</li>
+                )}
         </div>
     )
 }

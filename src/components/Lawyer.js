@@ -5,6 +5,7 @@ import LitigationsContainer from '../containers/LitigationsContainer'
 const Lawyer = (props) => {
 
     let lawyer = props.lawyers[props.match.params.id - 1]
+    //let lawyer = props.lawyers.filter(lawyer => lawyer.id == props.match.params.id)[0]
 
     return (
         <div> 
