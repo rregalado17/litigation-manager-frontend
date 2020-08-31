@@ -35,17 +35,17 @@ class LitigationForm extends React.Component {
     render() {
         return (
             <div>
-                <form onSubmit={this.handleSubmit}>
-                    <label>New Litigation Form:</label>
+                <form onSubmit={this.handleSubmit}><br></br>
+                    <label>New Litigation Form: </label>
                         <select name='status' value={this.state.status} onChange={this.handleChange}>
                             <option>Active</option>
                             <option>Concluded</option>
                         </select>
-                        <input type='text' placeholder='Caption' value={this.state.caption} name="caption" onChange={this.handleChange}/>
-                        <input type='text' placeholder='Court' value={this.state.court} name="court" onChange={this.handleChange}/>
-                        <input type='text' placeholder='Judge' value={this.state.judge} name="judge" onChange={this.handleChange}/>
-                        <input type='text' placeholder='Opposing Party' value={this.state.opposing_party} name="opposing_party" onChange={this.handleChange}/>
-                        <input type='text' placeholder='Costs' value={this.state.costs} name="costs" onChange={this.handleChange}/>
+                        <input type='text' placeholder='Caption' value={this.state.caption} name="caption" onChange={this.handleChange}/><br></br>
+                        <input type='text' placeholder='Court' value={this.state.court} name="court" onChange={this.handleChange}/><br></br>
+                        <input type='text' placeholder='Judge' value={this.state.judge} name="judge" onChange={this.handleChange}/><br></br>
+                        <input type='text' placeholder='Opposing Party' value={this.state.opposing_party} name="opposing_party" onChange={this.handleChange}/><br></br>
+                        <input type='text' placeholder='Costs' value={this.state.costs} name="costs" onChange={this.handleChange}/><br></br>
                     <input type="submit"/>
                 </form>
             </div>

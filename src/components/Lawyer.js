@@ -1,6 +1,7 @@
 import React from 'react'
 import { Redirect } from 'react-router-dom'
 import LitigationsContainer from '../containers/LitigationsContainer'
+import LawyerEdit from './LawyerEdit'
 
 const Lawyer = (props) => {
 
@@ -12,9 +13,11 @@ const Lawyer = (props) => {
             <h2>
                 {/* {lawyer ? null : <Redirect to='/lawyers'/>} */}
                 {lawyer ? lawyer.first_name : null} {lawyer ? lawyer.last_name : null} <br></br>
-                Budget: {lawyer ? lawyer.retainer : null}
+                
             </h2>
+            <LawyerEdit lawyer={lawyer} /><br></br>
             <LitigationsContainer lawyer={lawyer}/>
+            
         </div>  
     )
 }

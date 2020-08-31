@@ -5,7 +5,6 @@ import { deleteLitigation } from '../actions/deleteLitigation'
 const Litigations = (props) => {
 
     const handleDelete = (litigation) => {
-
         props.deleteLitigation(litigation.id, litigation.lawyer_id)
     }
 
