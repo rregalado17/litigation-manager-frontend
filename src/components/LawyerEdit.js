@@ -4,7 +4,7 @@ import { editLawyer } from '../actions/editLawyer'
 
 class LawyerEdit extends React.Component {
 
-    state = {first_name: '', last_name: '', retainer: ''} 
+    state = {first_name: '', last_name: ''} 
 
     handleChange = (event) => {
         this.setState({
@@ -25,10 +25,10 @@ class LawyerEdit extends React.Component {
         return (
             <div> 
                 <form onSubmit={this.handleSubmit}>
-                    <label>Edit Lawyer Form<br></br></label>
+                    <label><h3>Edit Lawyer Form</h3></label>
                     <input type='text' placeholder='First Name' value={this.state.first_name} name="first_name" onChange={this.handleChange}/>
                     <input type='text' placeholder='Last Name' value={this.state.last_name} name="last_name" onChange={this.handleChange}/>
-                    <input type='text' placeholder='Retainer' value={this.state.retainer} name="retainer" onChange={this.handleChange}/>
+                    {/* <input type='text' placeholder='Retainer' value={this.state.retainer} name="retainer" onChange={this.handleChange}/> */}
                     <input type="submit"/>
                 </form>
             </div>

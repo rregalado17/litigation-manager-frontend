@@ -36,13 +36,6 @@ const NavBar = () => {
       activeStyle={{
         background: 'gray'
       }}>New Lawyer</NavLink>
-    <NavLink
-      to="/lawyers/litigations"
-      exact 
-      style={link}
-      activeStyle={{
-        background: 'gray'
-      }}>Litigations</NavLink>
     </div>
   );
 };

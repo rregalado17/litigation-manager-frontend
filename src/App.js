@@ -1,7 +1,13 @@
 import React from 'react';
-import { connect } from 'react-redux'
+import {
+  BrowserRouter as Router,
+  Route
+} from 'react-router-dom';
+import './App.css';
+import Home from './components/Home'
 import LawyersContainer from './containers/LawyersContainer'
-import LitigationsContainer from './containers/LitigationsContainer'
+import NavBar from './components/NavBar'
+
 
 
 class App extends React.Component {
@@ -9,8 +15,9 @@ class App extends React.Component {
   render() {
     return (
       <div className="App">
-       <LawyersContainer />
-       <LitigationsContainer />
+        <NavBar />
+        <Route exact path='/' component={Home}/>
+        <LawyersContainer />
       </div>
     );
   }

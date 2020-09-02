@@ -1,9 +1,7 @@
 import React from 'react'
-import { connect } from 'react-redux'
-import {fetchLitigation} from '../actions/fetchLitigation'
 import LitigationForm from '../components/LitigationForm'
 import Litigations from '../components/Litigations'
-import Litigation from '../components/Litigation'
+
 
 class LitigationsContainer extends React.Component {
 
@@ -18,10 +16,6 @@ class LitigationsContainer extends React.Component {
     }
 }
 
-const mapStateToProps = state => { 
-    return {
-        litigation: state.litigation
-    }
-} 
 
-export default connect(mapStateToProps, {fetchLitigation})(LitigationsContainer)
+
+export default LitigationsContainer
