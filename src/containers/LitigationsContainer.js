@@ -6,6 +6,7 @@ import Litigations from '../components/Litigations'
 class LitigationsContainer extends React.Component {
 
     render() {
+        console.log(1)
         return (
             <div>
                 <LitigationForm lawyer={this.props.lawyer}/>

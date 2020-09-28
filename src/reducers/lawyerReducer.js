@@ -1,5 +1,5 @@
 export default function lawyerReducer(state = {lawyers: []}, action) {
-
+    console.log(10)
     switch (action.type){
         case 'FETCH_LAWYERS':
             return {lawyers: action.payload}
@@ -37,7 +37,7 @@ export default function lawyerReducer(state = {lawyers: []}, action) {
             })
             return {...state, lawyers: editLit}
         
-            default:
+        default:
             return state
 
     }

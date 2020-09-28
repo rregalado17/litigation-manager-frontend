@@ -7,7 +7,7 @@ import './App.css';
 import Home from './components/Home'
 import LawyersContainer from './containers/LawyersContainer'
 import NavBar from './components/NavBar'
-
+import './App.css';
 
 
 class App extends React.Component {

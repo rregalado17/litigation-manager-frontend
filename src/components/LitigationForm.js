@@ -20,8 +20,10 @@ class LitigationForm extends React.Component {
     }
 
     handleSubmit = (event) => {
+        console.log(2)
         event.preventDefault()
         this.props.addLitigation(this.state, this.props.lawyer.id)
+        console.log(3)
         this.setState({
             status: 'Active',
             caption: '',
@@ -31,9 +33,11 @@ class LitigationForm extends React.Component {
             // costs: '',
             lawyer: ''
         })
+        console.log(4)
     }
 
     render() {
+        console.log(5)
         return (
             <div>
                 <form onSubmit={this.handleSubmit}>

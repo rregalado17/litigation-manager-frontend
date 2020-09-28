@@ -2,6 +2,7 @@ import React from 'react'
 import { connect } from 'react-redux'
 import { addLawyer } from '../actions/addLawyer'
 
+
 class LawyerInput extends React.Component {
 
     state = {first_name: '', last_name: ''} 

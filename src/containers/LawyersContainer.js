@@ -8,7 +8,6 @@ import {fetchLawyers} from '../actions/fetchLawyers'
 import Lawyers from '../components/Lawyers'
 import Lawyer from '../components/Lawyer'
 import LawyerInput from '../components/LawyerInput'
-
 import Litigations from '../components/Litigations'
 
 
