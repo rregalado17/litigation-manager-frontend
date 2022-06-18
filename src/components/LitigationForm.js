@@ -20,10 +20,8 @@ class LitigationForm extends React.Component {
     }
 
     handleSubmit = (event) => {
-        console.log(2)
         event.preventDefault()
         this.props.addLitigation(this.state, this.props.lawyer.id)
-        console.log(3)
         this.setState({
             status: 'Active',
             caption: '',
@@ -33,24 +31,48 @@ class LitigationForm extends React.Component {
             // costs: '',
             lawyer: ''
         })
-        console.log(4)
     }
 
     render() {
-        console.log(5)
         return (
             <div>
                 <form onSubmit={this.handleSubmit}>
-                    <label><h3>New Litigation Form: </h3></label>
-                        <p><select name='status' value={this.state.status} onChange={this.handleChange}>
+                    <label><h4>New Litigation Form: </h4></label>
+                        <select 
+                            name='status' 
+                            value={this.state.status} 
+                            onChange={this.handleChange}>
                             <option>Active</option>
                             <option>Concluded</option>
-                        </select></p>
-
-                        <input type='text' placeholder='Caption' value={this.state.caption} name="caption" onChange={this.handleChange}/><br></br>
-                        <input type='text' placeholder='Court' value={this.state.court} name="court" onChange={this.handleChange}/><br></br>
-                        <input type='text' placeholder='Judge' value={this.state.judge} name="judge" onChange={this.handleChange}/><br></br>
-                        <input type='text' placeholder='Opposing Party' value={this.state.opposing_party} name="opposing_party" onChange={this.handleChange}/><br></br>
+                        </select><br></br>
+                        <input 
+                            type='text' 
+                            placeholder='Caption' 
+                            value={this.state.caption} 
+                            name="caption" 
+                            onChange={this.handleChange}
+                        /><br></br>
+                        <input 
+                            type='text' 
+                            placeholder='Court' 
+                            value={this.state.court} 
+                            name="court" 
+                            onChange={this.handleChange}
+                        /><br></br>
+                        <input 
+                            type='text' 
+                            placeholder='Judge' 
+                            value={this.state.judge} 
+                            name="judge" 
+                            onChange={this.handleChange}
+                        /><br></br>
+                        <input 
+                            type='text' 
+                            placeholder='Opposing Party' 
+                            value={this.state.opposing_party} 
+                            name="opposing_party" 
+                            onChange={this.handleChange}
+                        /><br></br>
                         {/* <input type='text' placeholder='Costs' value={this.state.costs} name="costs" onChange={this.handleChange}/><br></br> */}
                     <input type="submit"/>
                 </form>

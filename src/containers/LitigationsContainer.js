@@ -11,7 +11,6 @@ class LitigationsContainer extends React.Component {
             <div>
                 <LitigationForm lawyer={this.props.lawyer}/>
                 <Litigations litigations={this.props.lawyer && this.props.lawyer.litigations}/>
-            
             </div>
         )
     }

@@ -4,7 +4,6 @@ class LikeButton extends React.Component {
 
     state = {likes: 0} 
 
-
     handleLike = () => {
         this.setState(state => ({
             likes: state.likes + 1,
