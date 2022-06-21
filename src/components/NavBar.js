@@ -15,6 +15,7 @@ const NavBar = (  ) => {
   return (
     <div className="navbar">
       <NavLink
+        className='link'
         to="/"
         exact style={link}
         activeStyle={{background: '#4b616c'}}

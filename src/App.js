@@ -3,12 +3,11 @@ import {
   BrowserRouter as Router,
   Route
 } from 'react-router-dom';
-import './App.css';
+import './App.scss';
+import './components/styles.scss'
 import Home from './components/Home'
 import LawyersContainer from './containers/LawyersContainer'
 import NavBar from './components/NavBar'
-
-
 
 
 class App extends React.Component {
