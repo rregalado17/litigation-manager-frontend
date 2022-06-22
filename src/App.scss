@@ -27,7 +27,21 @@ body {
     transition: all .4s ease-in-out;
     font-family: 'Crimson Text', serif;
 }
-  
+
+// a {
+//     display: inline-block;
+//     text-decoration: none;
+//     color: inherit;
+//     font-family: inherit;
+// }
+
+header {
+    min-height: 100vh;
+    color: white;
+    overflow: hidden;
+    padding: 0 !important;
+}
+
 .header-content{
     display: grid;
     grid-template-columns: repeat(2, 1fr);
@@ -60,5 +74,27 @@ body {
     }
 }
 
-
+.theme-btn{
+    top: 5%;
+    right: 3%;
+    width: 70px;
+    height: 70px;
+    border-radius: 50%;
+    background-color: var(--color-grey4);
+    cursor: pointer;
+    position: fixed;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    box-shadow: 0 3px 15px rgb(0, 0, 0 .3);
+    transition: all 1s ease-in-out;
+    &:active{
+        transform: translateY(-3px);
+    }
+    i{
+        font-size: 1.4rem;
+        color: var(--color-grey2);
+        pointer-events: none;
+    }
+}
 
