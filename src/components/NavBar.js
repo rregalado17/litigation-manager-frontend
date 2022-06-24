@@ -9,6 +9,8 @@ const link = {
   background: '#3b4754',
   textDecoration: 'none',
   color: '#f7f6f2',
+  padding: '.5rem',
+  borderRadius: '30px',
 }
 
 const NavBar = (  ) => {
@@ -27,6 +29,13 @@ const NavBar = (  ) => {
         activeStyle={{background: "#4b616c"}}
         >Lawyers
       </NavLink>
+      {/* <NavBar
+        className='link'
+        to='/alllitigations'
+        exact style={link}
+        activeStyle={{background: "#4b616c"}}
+        >All Litigations 
+      </NavBar> */}
       <NavLink
         to="/lawyers/new"
         exact style={link}
