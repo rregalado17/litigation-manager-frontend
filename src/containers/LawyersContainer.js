@@ -23,10 +23,11 @@ class LawyersContainer extends React.Component {
             <div>
                 <Switch>
                     <Route path='/lawyers/new' component={LawyerInput}/>
-                    <Route path='/lawyers/:id' render= {(routerProps) => <Lawyer {...routerProps} lawyers={this.props.lawyers}/>}/>
+                    <Route path='/lawyers/:id' render = {(routerProps) => <Lawyer {...routerProps} lawyers={this.props.lawyers}/>}/>
                     <Route exact path='/lawyers' render= {() => <Lawyers lawyers={this.props.lawyers}/>}/>
                     <Route exact path='/lawyers/litigations' render={() => <Litigations litigations={this.props.lawyers.litigations}/>}/>
                 </Switch>
+                
             </div>
         )
     }
@@ -34,7 +35,8 @@ class LawyersContainer extends React.Component {
 
 const mapStateToProps = state => {
     return {
-        lawyers: state.lawyers
+        lawyers
+        : state.lawyers
     }
 } 
 
