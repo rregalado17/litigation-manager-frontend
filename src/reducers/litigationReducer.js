@@ -3,6 +3,12 @@ export default function litigationReducer(state = {litigations: []}, action) {
     switch (action.type){
         case 'FETCH_LITIGATIONS':
             return {litigations: action.payload}
+        default:
+            return state
+    
+        }
+    }
+
         
         // case 'ADD_LAWYER':
         //     return {...state, lawyers: [...state.lawyers, action.payload]}
@@ -37,9 +43,3 @@ export default function litigationReducer(state = {litigations: []}, action) {
         //     })
         //     return {...state, lawyers: editLit}
         
-        default:
-            return state
-
-    }
-}
-

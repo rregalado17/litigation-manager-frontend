@@ -13,10 +13,10 @@ import Litigations from '../components/Litigations'
 
 class LawyersContainer extends React.Component {
 
-    componentDidMount() {
-        this.props.fetchLawyers()
+    // componentDidMount() {
+    //     this.props.fetchLawyers()
         
-    }
+    // }
 
     render() {
         return ( 
