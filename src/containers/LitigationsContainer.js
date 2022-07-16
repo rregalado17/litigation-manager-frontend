@@ -18,12 +18,6 @@ class LitigationsContainer extends React.Component {
     }
 
     render() {
-        // return (
-        //     <div>
-        //         {/* <LitigationForm lawyer={this.props.lawyer}/> */}
-
-        //     </div>
-        // )
         return ( 
             <div>
                 <Switch>
@@ -32,7 +26,7 @@ class LitigationsContainer extends React.Component {
                     <Route exact path='/litigations' render= {() => <Litigations litigations={this.props.litigations}/>}/>
                     <Route exact path='litigations/lawyers' render={() => <Lawyers lawyers={this.props.litigations.lawyers}/>}/>
                 </Switch>
-                {/* <Litigations litigations={this.props.lawyer && this.props.lawyer.litigations}/> */}
+                     <Litigations litigations={this.props.lawyer && this.props.lawyer.litigations}/>
             </div>
         )
     }

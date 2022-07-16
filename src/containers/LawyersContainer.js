@@ -13,10 +13,9 @@ import Litigations from '../components/Litigations'
 
 class LawyersContainer extends React.Component {
 
-    // componentDidMount() {
-    //     this.props.fetchLawyers()
-        
-    // }
+    componentDidMount() {
+        this.props.fetchLawyers()
+    }
 
     render() {
         return ( 
@@ -35,8 +34,7 @@ class LawyersContainer extends React.Component {
 
 const mapStateToProps = state => {
     return {
-        lawyers
-        : state.lawyers
+        lawyers: state.lawyers
     }
 } 
 

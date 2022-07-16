@@ -8,6 +8,7 @@ import './components/styles.scss'
 import Home from './components/Home'
 import LawyersContainer from './containers/LawyersContainer'
 import NavBar from './components/NavBar'
+import LitigationsContainer from './containers/LitigationsContainer';
 
 
 class App extends React.Component {
@@ -17,7 +18,8 @@ class App extends React.Component {
       <div className="App">
         <NavBar />
         <Route exact path='/' component={Home}/>
-        <LawyersContainer />
+        <LawyersContainer /> 
+        <LitigationsContainer/>
       </div>
     );
   }
