@@ -18,8 +18,9 @@ class App extends React.Component {
       <div className="App">
         <NavBar />
         <Route exact path='/' component={Home}/>
-        <LawyersContainer /> 
         <LitigationsContainer/>
+        <LawyersContainer /> 
+
       </div>
     );
   }

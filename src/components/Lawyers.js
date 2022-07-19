@@ -9,7 +9,22 @@ const lawyerLink = {
     margin: '0 6px 6px',
     textDecoration: 'none',
     color: '#f7f6f2',
+    // &:hover {
+    //     transition: 'all .4s ease-in-out',
+    // }
+
 }
+
+
+// {
+//     width: 100%;
+//     height: 100%;
+//     object-fit: cover;
+//     transition: all .4s ease-in-out;
+//     filter: grayscale(100%);
+//     &:hover{
+//         filter: grayscale(0);
+//     }
 
 const Lawyers = (props) => {
     return (

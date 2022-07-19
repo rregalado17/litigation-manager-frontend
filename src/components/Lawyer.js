@@ -14,7 +14,6 @@ const Lawyer = (props) => {
             </h2>
             {/* <LawyerEdit lawyer={lawyer} /><br></br> */}
             <LitigationsContainer lawyer={lawyer}/>
-            
         </div>  
     )
 }

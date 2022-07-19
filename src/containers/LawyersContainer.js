@@ -10,7 +10,6 @@ import Lawyer from '../components/Lawyer'
 import LawyerInput from '../components/LawyerInput'
 import Litigations from '../components/Litigations'
 
-
 class LawyersContainer extends React.Component {
 
     componentDidMount() {
@@ -18,6 +17,7 @@ class LawyersContainer extends React.Component {
     }
 
     render() {
+
         return ( 
             <div>
                 <Switch>
@@ -26,9 +26,9 @@ class LawyersContainer extends React.Component {
                     <Route exact path='/lawyers' render= {() => <Lawyers lawyers={this.props.lawyers}/>}/>
                     <Route exact path='/lawyers/litigations' render={() => <Litigations litigations={this.props.lawyers.litigations}/>}/>
                 </Switch>
-                
             </div>
         )
+        
     }
 }
 
